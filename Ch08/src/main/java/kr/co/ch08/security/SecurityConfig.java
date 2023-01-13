@@ -5,6 +5,8 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.MessageDigestPasswordEncoder;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 import kr.co.ch08.service.User2Service;
@@ -39,5 +41,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.inMemoryAuthentication().withUser("admin").password("{noop}1234").roles("ADMIN");
 		auth.inMemoryAuthentication().withUser("manager").password("{noop}1234").roles("MANAGER");
 		auth.inMemoryAuthentication().withUser("member").password("{noop}1234").roles("MEMBER");
+		
+		//로그인 인증 처리 서비스, 암호화 방식 설정
+		auth.userDetailsService(userService).passwordEncoder(new BCryptPasswordEncoder());
 	}
 }
