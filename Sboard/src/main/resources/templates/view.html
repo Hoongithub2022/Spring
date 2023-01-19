@@ -10,8 +10,8 @@
         <header>
             <h3>Board System v1.0</h3>
             <p>
-                <span class="nick">길동이</span>님 반갑습니다.
-                <a href="#" class="logout">[로그아웃]</a>
+                <span class="nick" sec:authentication="principal.user.nick"></span>님 반갑습니다.
+                <a th:href="@{/user/logout}" class="logout">[로그아웃]</a>
             </p>
         </header>
 
@@ -60,8 +60,8 @@
                 <form action="#">
                     <textarea name="content" placeholder="댓글내용 입력"></textarea>
                     <div>
-                        <a href="#" class="btn btnCancel">취소</a>
-                        <input type="submit" class="btn btnComplete" value="작성완료"/>
+                    <a th:href="@{/list}" class="btn btnCancel">취소</a>
+                    <input type="submit" value="작성완료" class="btn btnComplete"/>
                     </div>
                 </form>
             </section>
