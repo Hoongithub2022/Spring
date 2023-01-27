@@ -1,4 +1,4 @@
-package kr.co.sboard.security;
+package kr.co.farmstory.security;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,7 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import kr.co.sboard.entity.UserEntity;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -20,27 +20,28 @@ import lombok.Singular;
 public class MyUserDetails implements UserDetails {
 	private static final long serialVersionUID = 1L;
 	
-	private UserEntity user;
+	//private UserEntity user;
 	
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		// 계정이 갖는 권한 목록 리턴
         List<GrantedAuthority> authorities = new ArrayList<>();
-        authorities.add(new SimpleGrantedAuthority("ROLE_"+user.getGrade()));	
-        
+        //authorities.add(new SimpleGrantedAuthority("ROLE_"+user.getGrade()));
         return authorities;
 	}
 	
 	@Override
 	public String getPassword() {
 		// 계정이 갖는 비밀번호
-		return user.getPass();
+		//return user.getPass();
+		return null;
 	}
 
 	@Override
 	public String getUsername() {
 		// 계정이 갖는 아이디
-		return user.getUid();
+		//return user.getUid();
+		return null;
 	}
 
 	@Override
