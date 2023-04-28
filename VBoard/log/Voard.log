@@ -999,3 +999,64 @@ Identify and stop the process that's listening on port 8787 or configure this ap
 2023-04-28 10:39:12.884  INFO 11552 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-28 10:39:12.887  INFO 11552 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-04-28 10:39:12.980  INFO 11552 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-28 10:39:23.921  INFO 11552 --- [restartedMain] kr.co.voard.VBoardApplication            : Starting VBoardApplication using Java 17.0.5 on DESKTOP-1KUH8U4 with PID 11552 (D:\Users\java1_u1\Workspace\Spring\VBoard\target\classes started by java1 in D:\Users\java1_u1\Workspace\Spring\VBoard)
+2023-04-28 10:39:23.921  INFO 11552 --- [restartedMain] kr.co.voard.VBoardApplication            : No active profile set, falling back to 1 default profile: "default"
+2023-04-28 10:39:24.119  INFO 11552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-28 10:39:24.129  INFO 11552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2023-04-28 10:39:24.221  INFO 11552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8787 (http)
+2023-04-28 10:39:24.221  INFO 11552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-28 10:39:24.221  INFO 11552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.73]
+2023-04-28 10:39:24.238  INFO 11552 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-04-28 10:39:24.238  INFO 11552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 315 ms
+2023-04-28 10:39:24.269  INFO 11552 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-28 10:39:24.275  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-28 10:39:24.287  INFO 11552 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-28 10:39:24.287  INFO 11552 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-28 10:39:24.325  INFO 11552 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-28 10:39:24.326  INFO 11552 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 10:39:24.439  INFO 11552 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a881355, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1532fd5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e08f749, org.springframework.security.web.header.HeaderWriterFilter@2f49bb90, org.springframework.security.web.authentication.logout.LogoutFilter@4a7516cb, kr.co.voard.jwt.JwtAuthenticationFilter@5dbdfb5e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a854911, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7872e4ea, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@16e5bebb, org.springframework.security.web.session.SessionManagementFilter@478981df, org.springframework.security.web.access.ExceptionTranslationFilter@1e6f50c1]
+2023-04-28 10:39:24.457  WARN 11552 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-28 10:39:24.499  INFO 11552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-04-28 10:39:24.560  INFO 11552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-28 10:39:24.570  INFO 11552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8787 (http) with context path ''
+2023-04-28 10:39:24.576  INFO 11552 --- [restartedMain] kr.co.voard.VBoardApplication            : Started VBoardApplication in 0.677 seconds (JVM running for 633.035)
+2023-04-28 10:39:24.578  INFO 11552 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-28 10:39:31.738  INFO 11552 --- [http-nio-8787-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-28 10:39:31.738  INFO 11552 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-28 10:39:31.739  INFO 11552 --- [http-nio-8787-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-28 10:39:31.739  INFO 11552 --- [http-nio-8787-exec-1] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:31.739  INFO 11552 --- [http-nio-8787-exec-1] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:31.787  INFO 11552 --- [http-nio-8787-exec-2] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:31.788  INFO 11552 --- [http-nio-8787-exec-2] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:31.789  INFO 11552 --- [http-nio-8787-exec-3] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:31.789  INFO 11552 --- [http-nio-8787-exec-3] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:31.975  INFO 11552 --- [http-nio-8787-exec-4] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:31.976  INFO 11552 --- [http-nio-8787-exec-4] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:32.064  INFO 11552 --- [http-nio-8787-exec-5] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:32.065  INFO 11552 --- [http-nio-8787-exec-5] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:35.645  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:35.645  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:35.683  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.controller.UserController    : vo : UserVO(uid=a3080, pass1=null, pass2=null, pass=1234, name=null, nick=null, email=null, hp=null, grade=0, zip=null, addr1=null, addr2=null, regip=null, rdate=null)
+2023-04-28 10:39:35.722  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.controller.UserController    : login...1
+2023-04-28 10:39:36.138  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.controller.UserController    : login...2
+2023-04-28 10:39:36.157  INFO 11552 --- [http-nio-8787-exec-6] kr.co.voard.controller.UserController    : login...3 : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhMzA4MCIsImlhdCI6MTY4MjY0NTk3NiwiZXhwIjoxNjgyNjQ5NTc2fQ.bthtSUAArCwEokjWArP0QVcCF1Cp1LvfnsMnVsF-SQc
+2023-04-28 10:39:36.193  INFO 11552 --- [http-nio-8787-exec-7] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:36.193  INFO 11552 --- [http-nio-8787-exec-7] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:39:42.326  INFO 11552 --- [http-nio-8787-exec-8] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...1
+2023-04-28 10:39:42.326  INFO 11552 --- [http-nio-8787-exec-8] kr.co.voard.jwt.JwtAuthenticationFilter  : doFilterInternal...2 : null
+2023-04-28 10:41:23.773  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-28 10:41:23.781  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-28 10:41:23.782  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-28 10:41:23.783  WARN 11552 --- [RMI TCP Connection(23)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.5/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.5/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.5/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.5/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.5/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.5/java.lang.Thread.run(Thread.java:833)
+2023-04-28 10:41:23.787  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-28 10:41:23.787  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-28 10:41:23.794  INFO 11552 --- [RMI TCP Connection(23)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
